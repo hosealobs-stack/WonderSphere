@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wonder Sphere | About Us</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="responsive.css" rel="stylesheet"/></head>
+<body>
+<header>
+<nav class="navbar">
+<div class="logo"><img alt="WonderSphere Logo" src="assets/GLOBELOGO.png"/></div>
+<div class="menu-toggle" id="mobile-menu">☰</div>
+<ul class="nav-list">
+<li><a href="index.html">Home</a></li>
+<li><a href="wonders.html">7 Wonders</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="signin.html">Sign In</a></li>
+</ul>
+</nav>
+</header>
+<main class="about-page">
+<div class="container">
+<h2>About Wonder Sphere</h2>
+<p>
+        Welcome to <strong>Wonders of the World Online</strong> — your gateway to exploring the planet’s most awe-inspiring landmarks.
+        Our mission is to bring history, culture, and travel inspiration together in one place, so anyone—from curious learners
+        to seasoned travelers—can discover the beauty and significance of the Seven Wonders.
+      </p>
+<p>
+        We believe every wonder tells a story — not just of ancient architecture or breathtaking design, but of the people,
+        nations, and traditions that created them. Through detailed articles, facts, and trivia, we aim to spark curiosity
+        and appreciation for our shared human heritage.
+      </p>
+<p>
+        This site is more than just a guide—it’s a celebration of creativity, resilience, and the timeless spirit of exploration.
+      </p>
+<h3>Meet the Author</h3>
+<div class="author-card">
+<h4>Dwayne Lobo</h4>
+<p>BA History, MA Cultural Heritage Studies</p>
+<p>
+          Dwayne is a contributing writer and researcher based in the Philippines.
+          He has produced writing for a variety of cultural and educational organizations, focusing on history, heritage,
+          and world architecture. He believes stories of the past can inspire future generations and deepen our understanding
+          of global culture.
+        </p>
+<p>Email: <a href="mailto:hosealobs@gmail.com">hosealobs@gmail.com</a></p>
+</div>
+</div>
+</main>
+<footer>
+<div class="container footer-content">
+<p>© <span id="year"></span> Wonder Sphere. All rights reserved.</p>
+</div>
+</footer>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menu = document.getElementById('mobile-menu');
+  const navList = document.querySelector('.nav-list');
+  menu.addEventListener('click', function() {
+    navList.classList.toggle('active');
+  });
+});
+</script>
+</body>
+</html>

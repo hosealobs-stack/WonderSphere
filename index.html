@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Wonder Sphere | Home</title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="responsive.css" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img alt="WonderSphere Logo" src="assets/GLOBELOGO.png"/></div>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="wonders.html">7 Wonders</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img alt="Seven Wonders of the World" class="hero-img" src="assets/360-7wondercomposite-videoSixteenByNine3000-v2.png"/>
+    <div class="container hero-text">
+      <h2>The Seven Wonders of the World</h2>
+      <p>“Seven wonders. Seven legacies. One journey through history’s most extraordinary creations.”</p>
+    </div>
+  </section>
+
+  <section class="intro container">
+    <h2>About the Seven Wonders</h2>
+    <p>
+      For as long as people have traveled, they have been captivated by the beauty and power of human creations.
+      Centuries ago, writers and explorers began speaking of a select group of monuments so extraordinary
+      that they became known as the Seven Wonders of the World. These wonders reflected the ambition of
+      ancient civilizations — vast temples, breathtaking statues, and architectural feats that seemed to touch
+      the heavens. Over time, wars, earthquakes, and the passage of history erased most of them, leaving
+      only the Great Pyramid of Giza to remind us of their former glory.
+    </p>
+    <p>
+      In modern times, the idea of “wonders” has never lost its appeal. To honor that fascination, an
+      international initiative invited people around the world to help choose a new list of wonders that
+      reflected the diversity and creativity of human culture today. Millions of votes poured in from every
+      continent, proving that the desire to celebrate our shared heritage is truly global.
+    </p>
+    <p>
+      The result is a collection of landmarks that span thousands of years and multiple civilizations —
+      from stone cities hidden in mountains to colossal statues watching over modern skylines. Together,
+      these sites form the New Seven Wonders of the World, a reminder not only of what humanity has built,
+      but also of the stories, traditions, and dreams carried forward through each generation.
+    </p>
+  </section>
+
+  <!-- 🎥 Added video section starts here -->
+  <section class="video-section container">
+    <h2 class="video-title">Watch: The New Seven Wonders of the World</h2>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/3aY9Se-J2ww?si=GFXZX_BsNPzg0UEB" 
+        title="The New Seven Wonders of the World" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p class="video-caption">A short visual journey through the world’s greatest architectural and cultural marvels.</p>
+  </section>
+  <!-- 🎥 Video section ends here -->
+
+  <main class="home-gallery container">
+    <h2 class="section-title">Explore the 7 Wonders</h2>
+    <div class="wonder-grid">
+      <div class="wonder-card">
+        <img alt="Christ the Redeemer" src="assets/christ.png"/>
+        <h3>Christ the Redeemer</h3>
+        <p>Rio de Janeiro, Brazil</p>
+        <a class="btn small" href="wonders/christ.html">Learn More</a>
+      </div>
+      <div class="wonder-card">
+        <img alt="The Colosseum" src="assets/Colosseum.png"/>
+        <h3>The Colosseum</h3>
+        <p>Rome, Italy</p>
+        <a class="btn small" href="wonders/colosseum.html">Learn More</a>
+      </div>
+      <div class="wonder-card">
+        <img alt="The Taj Mahal" src="assets/tajmahal.png"/>
+        <h3>The Taj Mahal</h3>
+        <p>Agra, India</p>
+        <a class="btn small" href="wonders/tajmahal.html">Learn More</a>
+      </div>
+      <div class="wonder-card">
+        <img alt="Petra" src="assets/petra.png"/>
+        <h3>Petra</h3>
+        <p>Jordan</p>
+        <a class="btn small" href="wonders/petra.html">Learn More</a>
+      </div>
+      <div class="wonder-card">
+        <img alt="Great Wall of China" src="assets/greatwall.png"/>
+        <h3>Great Wall of China</h3>
+        <p>China</p>
+        <a class="btn small" href="wonders/greatwall.html">Learn More</a>
+      </div>
+      <div class="wonder-card">
+        <img alt="Machu Picchu" src="assets/machupicchu.png"/>
+        <h3>Machu Picchu</h3>
+        <p>Peru</p>
+        <a class="btn small" href="wonders/machupicchu.html">Learn More</a>
+      </div>
+      <div class="wonder-card">
+        <img alt="Chichén Itzá" src="assets/chichenitza.png"/>
+        <h3>Chichén Itzá</h3>
+        <p>Mexico</p>
+        <a class="btn small" href="wonders/chichenitza.html">Learn More</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Wonder Sphere. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const menu = document.getElementById('mobile-menu');
+      const navList = document.querySelector('.nav-list');
+      menu.addEventListener('click', function() {
+        navList.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
